@@ -3,20 +3,6 @@ public class Viagem {
     private float distanciaTotal;
     private Motorista motorista;
     private Veiculo veiculo;
-
-    public Viagem(String destino, float distanciaTotal, Motorista motorista, Veiculo veiculo) {
-        setDestino(destino);
-        setDistanciaTotal(distanciaTotal);
-        setMotorista(motorista);
-        setVeiculo(veiculo);
-    }
-
-
-    public String getDestino() { return destino; }
-    public float getDistanciaTotal() { return distanciaTotal; }
-    public Motorista getMotorista() { return motorista; }
-    public Veiculo getVeiculo() { return veiculo; }
-
     
     public void setDestino(String destino) {
         if (destino == null || destino.trim().isEmpty())
@@ -42,7 +28,6 @@ public class Viagem {
         this.veiculo = veiculo;
     }
 
-    // Verifica se motorista e veículo estão aptos e inicia a viagem
     public void iniciarViagem() {
         System.out.println("\n=== Iniciando Viagem para: " + destino + " ===");
 
@@ -65,6 +50,19 @@ public class Viagem {
         }
     }
 
+        public String getDestino() 
+            { return destino; }
+
+    public float getDistanciaTotal()
+
+        { return distanciaTotal; }
+
+    public Motorista getMotorista() 
+        { return motorista; }
+
+    public Veiculo getVeiculo() 
+        { return veiculo; }
+
     
     public void gerarRelatorio() {
         System.out.println("\n--- Relatório de Viagem ---");
@@ -76,4 +74,5 @@ public class Viagem {
         System.out.println("  Combustível   : " + veiculo.getCombustivelAtual() + "L / " + veiculo.getCapacidadeTanque() + "L");
         System.out.println("---------------------------");
     }
+
 }
