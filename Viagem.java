@@ -11,13 +11,13 @@ public class Viagem {
         setVeiculo(veiculo);
     }
 
-    // Getters
+
     public String getDestino() { return destino; }
     public float getDistanciaTotal() { return distanciaTotal; }
     public Motorista getMotorista() { return motorista; }
     public Veiculo getVeiculo() { return veiculo; }
 
-    // Setters com validação
+    
     public void setDestino(String destino) {
         if (destino == null || destino.trim().isEmpty())
             throw new IllegalArgumentException("O destino não pode ser vazio.");
@@ -65,7 +65,7 @@ public class Viagem {
         }
     }
 
-    // Exibe relatório detalhado da viagem
+    
     public void gerarRelatorio() {
         System.out.println("\n--- Relatório de Viagem ---");
         System.out.println("  Destino       : " + destino);
