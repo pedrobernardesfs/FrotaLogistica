@@ -3,6 +3,7 @@ public class Viagem {
     private float distanciaTotal;
     private Motorista motorista;
     private Veiculo veiculo;
+
     
     public void setDestino(String destino) {
         if (destino == null || destino.trim().isEmpty())
@@ -50,19 +51,6 @@ public class Viagem {
         }
     }
 
-        public String getDestino() 
-            { return destino; }
-
-    public float getDistanciaTotal()
-
-        { return distanciaTotal; }
-
-    public Motorista getMotorista() 
-        { return motorista; }
-
-    public Veiculo getVeiculo() 
-        { return veiculo; }
-
     
     public void gerarRelatorio() {
         System.out.println("\n--- Relatório de Viagem ---");
@@ -74,5 +62,20 @@ public class Viagem {
         System.out.println("  Combustível   : " + veiculo.getCombustivelAtual() + "L / " + veiculo.getCapacidadeTanque() + "L");
         System.out.println("---------------------------");
     }
+
+    public String getDestino() 
+            { return destino; }
+            
+    public float getDistanciaTotal()
+
+        { return distanciaTotal; }
+
+    public Motorista getMotorista() 
+        { return motorista; }
+
+    public Veiculo getVeiculo() 
+        { return veiculo; }
+
+
 
 }
