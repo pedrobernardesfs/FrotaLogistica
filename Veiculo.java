@@ -11,13 +11,6 @@ public class Veiculo {
         setCombustivelAtual(combustivelAtual);
     }
 
-   
-    public String getPlaca() { return placa; }
-    public String getModelo() { return modelo; }
-    public float getCapacidadeTanque() { return capacidadeTanque; }
-    public float getCombustivelAtual() { return combustivelAtual; }
-
-    
     public void setPlaca(String placa) {
         if (placa == null || placa.trim().isEmpty())
             throw new IllegalArgumentException("A placa não pode ser vazia.");
@@ -71,5 +64,19 @@ public class Veiculo {
 
     public void statusCombustivel() {
         System.out.println("  Veículo: " + modelo + " (" + placa + ") | Combustível: " + combustivelAtual + "L / " + capacidadeTanque + "L");
+        
+    public String getPlaca() 
+    { return placa; } 
+
+    public String getModelo() 
+    { return modelo; }
+
+    public float getCapacidadeTanque() 
+    { return capacidadeTanque; }
+
+    public float getCombustivelAtual() 
+    { return combustivelAtual; }
+
+        
     }
 }
