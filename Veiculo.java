@@ -62,6 +62,7 @@ public class Veiculo {
         return true;
     }
 
+    
     public void statusCombustivel() {
         System.out.println("  Veículo: " + modelo + " (" + placa + ") | Combustível: " + combustivelAtual + "L / " + capacidadeTanque + "L");
         
