@@ -11,7 +11,7 @@ public class Veiculo {
         setCombustivelAtual(combustivelAtual);
     }
 
-    // Getters
+   
     public String getPlaca() { return placa; }
     public String getModelo() { return modelo; }
     public float getCapacidadeTanque() { return capacidadeTanque; }
