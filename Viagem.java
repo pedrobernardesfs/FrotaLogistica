@@ -5,7 +5,7 @@ public class Viagem {
     private Veiculo veiculo;
 
     
-    public void setDestino(String destino) {
+    public void ValidarDestino(String destino) {
         if (destino == null || destino.trim().isEmpty())
             throw new IllegalArgumentException("O destino não pode ser vazio.");
         this.destino = destino.trim();

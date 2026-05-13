@@ -4,6 +4,16 @@ public class Motorista {
      private String cnh;
      private ValidadeCnh validadeCnh;
 
+     private boolean validarDados(String campo) {
+          return campo == null || campo.trim().isEmpty();
+     }
+     private boolean validarCampos(){
+          if ( (campoVazio(nome)) || (campoVazio(cpf)) || (campoVazio(cnh))
+                  || (campoVazio(validadeCnh)) {
+               System.out.println("Preencha com os campos obrigatórios!");
+               return false;
+          }
+               return true;
      public String getNome() {
           return nome;
      }
